@@ -4,7 +4,7 @@ import { ArrowDown, Mail } from "lucide-react";
 
 const HeroSection = () => {
   const experienceMonths = useMemo(() => {
-    const start = new Date(2025, 9); // Oct 2025
+    const start = new Date(2024, 6); // Jul 2024 (9 months before Mar 2025)
     const now = new Date();
     const months =
       (now.getFullYear() - start.getFullYear()) * 12 +

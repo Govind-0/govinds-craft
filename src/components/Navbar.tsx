@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -13,6 +14,7 @@ const navItems = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 50);
@@ -31,7 +33,7 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="text-foreground font-semibold text-lg tracking-tight">
-          GC
+          {isMobile ? "GC" : "Govind Chaudhary"}
         </a>
 
         {/* Desktop */}
