@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { Mail, Github, Linkedin, Send } from "lucide-react";
+import { Mail, Github, Linkedin, Phone, Code, Send } from "lucide-react";
 import { useState } from "react";
 
 const ContactSection = () => {
@@ -25,7 +25,19 @@ const ContactSection = () => {
           {/* Links */}
           <div className="space-y-4">
             <a
-              href="mailto:govindchaudhary.dev@gmail.com"
+              href="tel:+918077084214"
+              className="flex items-center gap-4 surface-glass rounded-2xl p-5 hover:border-primary/30 transition-colors"
+            >
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Phone size={18} className="text-primary" />
+              </div>
+              <div>
+                <p className="text-sm font-medium text-foreground">Phone</p>
+                <p className="text-xs text-muted-foreground">+91-8077084214</p>
+              </div>
+            </a>
+            <a
+              href="mailto:vidhirawat9023@gmail.com"
               className="flex items-center gap-4 surface-glass rounded-2xl p-5 hover:border-primary/30 transition-colors"
             >
               <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -33,25 +45,11 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="text-sm font-medium text-foreground">Email</p>
-                <p className="text-xs text-muted-foreground">govindchaudhary.dev@gmail.com</p>
+                <p className="text-xs text-muted-foreground">vidhirawat9023@gmail.com</p>
               </div>
             </a>
             <a
-              href="https://github.com/govindchaudhary"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 surface-glass rounded-2xl p-5 hover:border-primary/30 transition-colors"
-            >
-              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Github size={18} className="text-primary" />
-              </div>
-              <div>
-                <p className="text-sm font-medium text-foreground">GitHub</p>
-                <p className="text-xs text-muted-foreground">github.com/govindchaudhary</p>
-              </div>
-            </a>
-            <a
-              href="https://linkedin.com/in/govindchaudhary"
+              href="https://www.linkedin.com/in/vaishnavi-rawat-7a985a257"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 surface-glass rounded-2xl p-5 hover:border-primary/30 transition-colors"
@@ -61,7 +59,35 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="text-sm font-medium text-foreground">LinkedIn</p>
-                <p className="text-xs text-muted-foreground">linkedin.com/in/govindchaudhary</p>
+                <p className="text-xs text-muted-foreground">vaishnavi-rawat</p>
+              </div>
+            </a>
+            <a
+              href="https://github.com/ividhi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 surface-glass rounded-2xl p-5 hover:border-primary/30 transition-colors"
+            >
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Github size={18} className="text-primary" />
+              </div>
+              <div>
+                <p className="text-sm font-medium text-foreground">GitHub</p>
+                <p className="text-xs text-muted-foreground">github.com/ividhi</p>
+              </div>
+            </a>
+            <a
+              href="https://leetcode.com/u/Vaishnavirawat/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 surface-glass rounded-2xl p-5 hover:border-primary/30 transition-colors"
+            >
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Code size={18} className="text-primary" />
+              </div>
+              <div>
+                <p className="text-sm font-medium text-foreground">LeetCode</p>
+                <p className="text-xs text-muted-foreground">leetcode.com/u/Vaishnavirawat</p>
               </div>
             </a>
           </div>

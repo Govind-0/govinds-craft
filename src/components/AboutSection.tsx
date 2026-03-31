@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 
 const highlights = [
-  { value: "30%", label: "Query Performance Boost" },
-  { value: "40%", label: "Faster Request Processing" },
-  { value: "500+", label: "DSA Problems Solved" },
+  { value: "400+", label: "Problems Solved" },
+  { value: "7.8", label: "CGPA (B.Tech CSE)" },
+  { value: "90.7%", label: "Class 10 Score" },
 ];
 
 const AboutSection = () => (
@@ -35,14 +35,14 @@ const AboutSection = () => (
         className="max-w-3xl mx-auto space-y-5 body-md text-muted-foreground"
       >
         <p>
-          Full Stack Engineer with industry experience at <span className="text-foreground font-medium">MAQ Software</span>,
-          focused on building production-grade systems that scale. Strong backend focus spanning REST API
-          design, authentication architectures, and database performance optimization.
+          Software Engineer with a strong foundation in full-stack development and hands-on experience
+          working on real-world systems during an internship at <span className="text-foreground font-medium">DRDO / ADRDE</span>.
+          Skilled in backend development, REST APIs, and database integration.
         </p>
         <p>
-          I write clean, maintainable code with an emphasis on system reliability and developer experience.
-          From optimizing SQL queries to building reusable React components — every line of code serves
-          a purpose.
+          Focused on building clean, maintainable, and scalable applications. From crafting efficient
+          backend architectures to designing responsive user interfaces — every line of code is written
+          with production quality in mind.
         </p>
       </motion.div>
     </div>

@@ -3,25 +3,25 @@ import SectionHeading from "./SectionHeading";
 
 const categories = [
   {
-    title: "Backend Engineering",
+    title: "Programming",
     primary: true,
-    skills: ["Java", "Spring Boot", "REST APIs", "JWT & OAuth", "Microservices", "Node.js"],
+    skills: ["Java", "Python"],
   },
   {
-    title: "Frontend Engineering",
-    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Redux", "Responsive Design"],
+    title: "Backend",
+    skills: ["Spring Boot", "Node.js", "Express.js"],
   },
   {
-    title: "Databases & Caching",
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Query Optimization", "Database Design"],
+    title: "Frontend",
+    skills: ["HTML", "CSS", "JavaScript", "Angular", "Tailwind CSS", "Bootstrap"],
   },
   {
-    title: "System Design",
-    skills: ["API Design", "Scalable Architecture", "RBAC", "Authentication", "Load Balancing", "Caching Strategies"],
+    title: "Databases",
+    skills: ["MySQL"],
   },
   {
-    title: "Cloud & DevOps",
-    skills: ["AWS", "Docker", "CI/CD", "Git", "Linux", "Nginx"],
+    title: "Tools & Platforms",
+    skills: ["Git", "GitHub", "Firebase"],
   },
 ];
 
@@ -48,7 +48,7 @@ const SkillsSection = () => (
               <h3 className="font-semibold text-foreground text-sm">{cat.title}</h3>
               {cat.primary && (
                 <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/20 text-primary font-medium uppercase tracking-wider">
-                  Primary
+                  Core
                 </span>
               )}
             </div>

@@ -1,46 +1,33 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { ArrowUpRight, Zap, Globe, MessageCircle, QrCode } from "lucide-react";
+import { ArrowUpRight, FileText, Keyboard, QrCode } from "lucide-react";
 
 const projects = [
   {
-    title: "Employee Request Management System",
-    problem: "Manual request workflows causing delays and errors in enterprise operations.",
+    title: "Note Saving Web Application",
+    problem: "No efficient way to manage and persist notes with a clean interface.",
     solution:
-      "Automated end-to-end request processing with secure authentication, role-based access, and real-time reporting dashboards.",
-    tech: ["Spring Boot", "React", "PostgreSQL", "JWT", "REST APIs"],
+      "Built a full-stack CRUD application with REST APIs using Spring Boot and Spring Data JPA for seamless note management.",
+    tech: ["Spring Boot", "Angular", "MySQL"],
     impact: [
-      "Reduced request processing time by 40%",
-      "Automated workflows and reporting",
-      "Integrated RBAC and secure auth",
+      "Full CRUD functionality with REST APIs",
+      "Spring Data JPA for efficient database operations",
+      "Clean, responsive UI with Angular",
     ],
-    icon: Zap,
+    icon: FileText,
   },
   {
-    title: "Real Estate Web Application",
-    problem: "Slow, unresponsive property search experience with poor rendering performance.",
+    title: "Typing Speed Test Game",
+    problem: "Lack of engaging tools to measure and improve typing speed with progress tracking.",
     solution:
-      "Built a scalable property platform with dynamic filtering, optimized rendering, and modular component architecture.",
-    tech: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+      "Created a real-time typing test with authentication, difficulty levels, score tracking, and LocalStorage persistence.",
+    tech: ["HTML", "CSS", "JavaScript"],
     impact: [
-      "Dynamic search and filtering system",
-      "Optimized rendering performance",
-      "Scalable, reusable component design",
+      "Real-time speed & accuracy tracking",
+      "Login/signup authentication system",
+      "Difficulty levels & score persistence",
     ],
-    icon: Globe,
-  },
-  {
-    title: "College Dating App",
-    problem: "No secure, campus-specific platform for students to connect in real-time.",
-    solution:
-      "Designed a real-time chat application with secure authentication, matching algorithms, and scalable API architecture.",
-    tech: ["React", "Node.js", "Socket.io", "MongoDB", "JWT"],
-    impact: [
-      "Real-time chat with Socket.io",
-      "Secure authentication & matching logic",
-      "Scalable API architecture",
-    ],
-    icon: MessageCircle,
+    icon: Keyboard,
   },
 ];
 
@@ -56,7 +43,7 @@ const ordigoz = {
     { label: "Table-Based Tracking", desc: "Orders mapped to tables for seamless service" },
   ],
   impact: [
-    "Reduces staff dependency by 60%",
+    "Reduces staff dependency",
     "Speeds up order-to-serve time",
     "Eliminates manual order errors",
     "Improves overall customer experience",
@@ -74,7 +61,7 @@ const ProjectsSection = () => (
       />
 
       {/* Regular projects */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+      <div className="grid md:grid-cols-2 gap-4 mb-12">
         {projects.map((p, i) => (
           <motion.div
             key={p.title}

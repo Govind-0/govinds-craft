@@ -33,10 +33,9 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="text-foreground font-semibold text-lg tracking-tight">
-          {isMobile ? "GC" : "Govind Chaudhary"}
+          {isMobile ? "VR" : "Vaishnavi Rawat"}
         </a>
 
-        {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <a
@@ -49,7 +48,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile toggle */}
         <button
           className="md:hidden text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -58,7 +56,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div

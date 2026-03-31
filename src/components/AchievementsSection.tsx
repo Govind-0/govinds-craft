@@ -1,29 +1,29 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { Trophy, Code, Target } from "lucide-react";
+import { Trophy, Code, Award } from "lucide-react";
 
 const achievements = [
   {
-    icon: Trophy,
-    title: "Top 10 — IIIT Manipur",
-    description: "Ranked in the top 10 in a competitive coding competition",
-  },
-  {
-    icon: Target,
-    title: "Rank 3323 / 40,000",
-    description: "Competitive standing on Codeforces platform",
-  },
-  {
     icon: Code,
-    title: "500+ Problems Solved",
+    title: "400+ Problems Solved",
     description: "Consistent problem-solving across DSA topics",
+  },
+  {
+    icon: Trophy,
+    title: "2nd — National Social Science Exhibition",
+    description: "Achieved 2nd position at national level",
+  },
+  {
+    icon: Award,
+    title: "Regional Badminton Player",
+    description: "Competed at regional level in badminton",
   },
 ];
 
 const AchievementsSection = () => (
   <section className="section-padding">
     <div className="max-w-4xl mx-auto">
-      <SectionHeading label="Achievements" title="Competitive edge." />
+      <SectionHeading label="Achievements" title="Beyond the code." />
 
       <div className="grid md:grid-cols-3 gap-4">
         {achievements.map((a, i) => (
