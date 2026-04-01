@@ -13,8 +13,8 @@ const HeroSection = () => {
   }, []);
 
   const experienceText = experienceMonths >= 12
-    ? `${Math.floor(experienceMonths / 12)}+ year${Math.floor(experienceMonths / 12) > 1 ? "s" : ""} of experience`
-    : `${experienceMonths} months of experience`;
+    ? `${Math.floor(experienceMonths / 12)}+ year${Math.floor(experienceMonths / 12) > 1 ? "s" : ""} of industry experience`
+    : `${experienceMonths}+ months of industry experience`;
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
