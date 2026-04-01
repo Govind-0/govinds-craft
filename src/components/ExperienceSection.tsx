@@ -57,7 +57,7 @@ const ExperienceSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="surface-glass rounded-2xl p-8"
+            className={`surface-glass rounded-2xl p-8 ${(exp as any).current ? 'border border-primary/30' : ''}`}
           >
             <div className="flex items-start gap-4 mb-6">
               <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
