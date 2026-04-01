@@ -4,6 +4,19 @@ import { Briefcase, GraduationCap, Award } from "lucide-react";
 
 const experiences = [
   {
+    role: "SAP Engineer",
+    company: "EY",
+    period: "Current",
+    icon: Briefcase,
+    highlights: [
+      "Engineering enterprise-grade systems for large-scale business operations",
+      "Contributing to backend system development and production workflows",
+      "Handling real-world production deployments and business-critical applications",
+      "Building scalable architectures aligned with enterprise standards",
+    ],
+    current: true,
+  },
+  {
     role: "Intern",
     company: "DRDO / ADRDE",
     period: "Sept 2024 – Oct 2024",
@@ -12,7 +25,7 @@ const experiences = [
       "Developed responsive web pages for internal systems",
       "Integrated backend using PHP and MySQL",
       "Built dynamic features using JavaScript and Bootstrap",
-      "Worked on real-world system design and implementation",
+      "Delivered real-world system design and implementation",
     ],
   },
 ];
