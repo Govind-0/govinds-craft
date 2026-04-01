@@ -4,6 +4,19 @@ import { Briefcase, GraduationCap, Award } from "lucide-react";
 
 const experiences = [
   {
+    role: "SAP Engineer",
+    company: "EY",
+    period: "Current",
+    icon: Briefcase,
+    highlights: [
+      "Engineering enterprise-grade systems for large-scale business operations",
+      "Contributing to backend system development and production workflows",
+      "Handling real-world production deployments and business-critical applications",
+      "Building scalable architectures aligned with enterprise standards",
+    ],
+    current: true,
+  },
+  {
     role: "Intern",
     company: "DRDO / ADRDE",
     period: "Sept 2024 – Oct 2024",
@@ -12,7 +25,7 @@ const experiences = [
       "Developed responsive web pages for internal systems",
       "Integrated backend using PHP and MySQL",
       "Built dynamic features using JavaScript and Bootstrap",
-      "Worked on real-world system design and implementation",
+      "Delivered real-world system design and implementation",
     ],
   },
 ];
@@ -44,7 +57,7 @@ const ExperienceSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="surface-glass rounded-2xl p-8"
+            className={`surface-glass rounded-2xl p-8 ${(exp as any).current ? 'border border-primary/30' : ''}`}
           >
             <div className="flex items-start gap-4 mb-6">
               <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">

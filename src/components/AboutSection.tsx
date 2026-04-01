@@ -35,13 +35,14 @@ const AboutSection = () => (
         className="max-w-3xl mx-auto space-y-5 body-md text-muted-foreground"
       >
         <p>
-          Software Engineer with a strong foundation in full-stack development and hands-on experience
-          working on real-world systems during an internship at <span className="text-foreground font-medium">DRDO / ADRDE</span>.
-          Skilled in backend development, REST APIs, and database integration.
+          Software Engineer currently working at <span className="text-foreground font-medium">EY</span> as an SAP Engineer,
+          contributing to enterprise systems and backend engineering. With prior experience at{" "}
+          <span className="text-foreground font-medium">DRDO / ADRDE</span>, skilled in backend development,
+          REST APIs, and database integration.
         </p>
         <p>
-          Focused on building clean, maintainable, and scalable applications. From crafting efficient
-          backend architectures to designing responsive user interfaces — every line of code is written
+          Delivering clean, maintainable, and scalable applications. From engineering efficient
+          backend architectures to building responsive user interfaces — every line of code is written
           with production quality in mind.
         </p>
       </motion.div>
